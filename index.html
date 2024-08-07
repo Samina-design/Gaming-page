@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="banner">
+            <h1>Welcome to Our Gaming Site</h1>
+            <button onclick="scrollToSection('about')">Learn More</button>
+        </section>
+        <section id="features">
+            <h2>Features</h2>
+            <div class="feature-item">Feature 1</div>
+            <div class="feature-item">Feature 2</div>
+            <div class="feature-item">Feature 3</div>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a leading gaming company...</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Name" required />
+                <input type="email" name="email" placeholder="Email" required />
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gaming Company</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

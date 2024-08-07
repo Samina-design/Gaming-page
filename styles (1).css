@@ -1,0 +1,89 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/assets/banner.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+
+#features, #about, #contact {
+    padding: 50px 20px;
+}
+
+.feature-item {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 10px 0;
+}
+#contactForm{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+} 
+#contactForm input, textarea{
+    width: 40vw;
+    height: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 1rem 0rem;
+} 
+#contactForm textarea{
+    height: 200px;
+}
+#contactForm button{
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 5%;
+    padding: 20px 0px;
+}
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    #banner {
+        height: 50vh;
+    }
+}
